@@ -64,6 +64,12 @@ img {
 .bg-visual {
     background-color: hsl(234, 85%, 45%, 10%);
 }
+.flex {
+    display: flex;
+}
+.margin-r-1 {
+    margin-right: 1rem;
+}
     /* MAIN */
 
 .card-result{
@@ -123,34 +129,31 @@ img {
     gap: 2rem;
 }
 .card-summary__stats--reaction,
-.card-summary__stats--memory {
+.card-summary__stats--memory,
+.card-summary__stats--verbal,
+.card-summary__stats--visual {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
     border-radius: 1rem;
 }
-.card-summary__stats--reaction-holder,
-.card-summary__stats--memory-holder {
-    display: flex;
+.card-summary__stats--visual-text {
+    color: var(--CobaltBlue);
 }
-.card-summary__stats--reaction-holder img,
-.card-summary__stats--memory-holder img {
-    margin-right: 1rem;
+.card-summary__stats--verbal-text {
+    color: var(--GreenTeal);
 }
 .card-summary__stats--memory-text {
     color: var(--OrangeyYellow);
 }
 .card-summary__stats--reaction-text {
     color: var(--LightRed);
-    
 }
-.card-summary__stats--reaction-score,
-.card-summary__stats--memory-score {
+.color-dg {
     font-weight: bold;
     color: var(--DarkGrayBlue);
 }
-.card-summary__stats--reaction-total-score,
-.card-summary__stats--memory-total-score {
+.color-gray {
     color: gray;
 }
 

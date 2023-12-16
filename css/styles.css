@@ -52,6 +52,18 @@ img {
 .border-radius {
     border-radius: 2rem;
 }
+.bg-reaction {
+    background-color: hsl(0, 100%, 67%, 10%)
+}
+.bg-memory {
+    background-color: hsl(39, 100%, 56%, 10%);
+}
+.bg-verbal {
+    background-color: hsl(166, 100%, 37%, 10%);
+}
+.bg-visual {
+    background-color: hsl(234, 85%, 45%, 10%);
+}
     /* MAIN */
 
 .card-result{
@@ -110,19 +122,35 @@ img {
     flex-direction: column;
     gap: 2rem;
 }
-.card-summary__stats--reaction {
+.card-summary__stats--reaction,
+.card-summary__stats--memory {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
     border-radius: 1rem;
-    background-color: hsl(0, 100%, 67%, 10%);
 }
-.card-summary__stats--reaction-text{
+.card-summary__stats--reaction-holder,
+.card-summary__stats--memory-holder {
+    display: flex;
+}
+.card-summary__stats--reaction-holder img,
+.card-summary__stats--memory-holder img {
+    margin-right: 1rem;
+}
+.card-summary__stats--memory-text {
+    color: var(--OrangeyYellow);
+}
+.card-summary__stats--reaction-text {
     color: var(--LightRed);
-    margin-left: -11rem;
+    
 }
-.card-summary__stats--reaction-number {
+.card-summary__stats--reaction-score,
+.card-summary__stats--memory-score {
     font-weight: bold;
+    color: var(--DarkGrayBlue);
 }
-.card-summary__stats--reaction span {
+.card-summary__stats--reaction-total-score,
+.card-summary__stats--memory-total-score {
+    color: gray;
 }
+

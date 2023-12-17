@@ -210,4 +210,8 @@ img {
     color: var(--White);
     background-color: var(--DarkGrayBlue);
     cursor: pointer;
+    border: none;
+}
+.card-summary__btn button:hover {
+    background-color: var(--LightRoyalBlue-bg);
 }

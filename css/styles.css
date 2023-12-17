@@ -70,23 +70,57 @@ img {
 .margin-r-1 {
     margin-right: 1rem;
 }
+@media (min-width: 445px) {
+    .card-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 1rem;
+    }
+}
     /* MAIN */
-
+@media (min-width: 445px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: var(--White);
+        border-radius: 2rem;
+        min-inline-size: 30rem;
+        max-inline-size: 65rem;
+        height: 45rem;
+        box-shadow: 4px 6px 34px 10px rgba(0,0,0,0.08);
+        -webkit-box-shadow: 4px 6px 34px 10px rgba(0,0,0,0.08);
+        -moz-box-shadow: 4px 6px 34px 10px rgba(0,0,0,0.08);
+    }
+}
 .card-result{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 35rem;
+    min-height: 35rem;
     padding: 0 2rem;
     color: var(--White);
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     background: rgb(120,87,255);
     background: linear-gradient(180deg, rgba(120,87,255,0.99002849002849) 0%, rgba(46,43,233,1) 100%);
+} 
+@media (min-width: 445px) {
+    .card-result {
+        border-radius: 2rem;
+        padding: 0rem 3rem;
+    }
 }
 .card-result__title {
     color: var(--LightLavender);
+}
+@media (min-width: 445px) {
+    .card-result__title {
+        margin: 1rem 0 1rem 0;
+        font-weight: bold;
+    }
 }
 .card-result__rating {
     display: flex;
@@ -99,6 +133,12 @@ img {
     width: 13rem;
     background: rgb(46,43,233);
     background: linear-gradient(0deg, rgba(46,43,233,0.54) 0%, rgba(78,33,202,1) 100%);
+}
+@media (min-width: 445px) {
+    .card-result__rating {
+        height: 18rem;
+        width: 18rem;
+    }
 }
 .card-result__rating span {
     font-size: 5rem;
@@ -118,10 +158,11 @@ img {
 /* summary */
 .card-summary {
     padding: 0rem 3rem;
+    margin-top: 2rem;
 }
-
 .card-summary__title h2{
     font-size: 2.4rem;
+    margin: 0rem 0rem 2rem 0rem;
 }
 .card-summary__stats {
     display: flex;
@@ -156,4 +197,17 @@ img {
 .color-gray {
     color: gray;
 }
-
+/* button */
+.card-summary__btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.card-summary__btn button {
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    width: 100%;
+    color: var(--White);
+    background-color: var(--DarkGrayBlue);
+    cursor: pointer;
+}
